@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="icon" href="image/icon.png" type="image/x-icon" />
+<meta name="description" content="感谢一路上有你的陪伴，今天对着世界宣布：我爱你">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <script src="./js/mouse_click2.js"></script>
 <script src="./js/clipboard.js"></script> 
 <script src="./js/mouse_click.js"></script> 
 <title>love</title>
-<meta name="description" content="感谢一路上有你的陪伴，今天对着世界宣布："我爱你"">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="./css/base.css" rel="stylesheet" type="text/css" media="all">
 <link href="./css/main.css" rel="stylesheet" type="text/css" media="all">
@@ -27,7 +30,7 @@
  
  
 <div class="wrapper">
-  <section class="hero overlay">
+  <section class="hero overlay" id="home">
     <header class="header default" style="display: block;">
       <div class=" left-part"> <a class="logo scroll" href="#story">
 		  <h2 class="block-date-hero">致小裕子<b style="color: red">❤</b>：</h2>
@@ -67,9 +70,12 @@
           </div>
         </div>
       </div>
+	<canvas id="c" ></canvas>
     </div>
+	  
+<script src="./js/float.js"></script> 
   </section>
-  <section id="story" class="story pt-120 pb-120";>
+  <section id="story" class="story pt-120 pb-120">
     <svg class="section-dashed" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="578px" xml:space="preserve">
       <path class="dashed-line" stroke-width="1" d="M30 0 v600 400"></path>
     </svg>
@@ -116,7 +122,7 @@
         <div class="col-sm-5 ">
           <div class="couple-story text-right">
             <p>下一次我会更勇敢点，当面表白，一点都不虚！先套个戒指
-				<br><img src="image/w5.png">如果你已经有了男朋友，也没有关系，我还能等俩年。我不会说什么情话：这一年交给我去闯荡，如果你愿意的话，往后余生都是你。</p>
+				<br><img src="image/w5.png" alt="戒指"/>如果你已经有了男朋友，也没有关系，我还能等俩年。我不会说什么情话：这一年交给我去闯荡，如果你愿意的话，往后余生都是你。</p>
           </div>
         </div>
         <div class="col-sm-5 col-sm-offset-2">
@@ -307,8 +313,6 @@
 			var a='<span class="digit">'+g+'</span> days <span class="digit">'+b+'</span> hours <span class="digit">'+d+'</span> minutes <span class="digit">'+f+"</span> seconds";$("#elapseClock").html(a)};
 </script>
 <textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
-<canvas id="c" width="1000" height="1000"></canvas>
-<script src="./js/float.js"></script> 
-   
+  
 </body>
 </html>

@@ -26,9 +26,16 @@
 .demo{width:360px;margin:60px auto 10px auto}
         .demo p{padding:10px 0}
 canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
+	bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+.block-img{
+	margin: 5px;
 }
 .loader {
     background: #ffffff;
