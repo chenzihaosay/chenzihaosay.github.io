@@ -15,7 +15,8 @@
 <link href="./css/venobox.css" rel="stylesheet" type="text/css" media="all">
 <link href="./font/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="./css/ae168344b8194b348b667f19ac4d1956.css" rel="stylesheet">
-
+<link href="css/aplayer.css" rel="stylesheet">
+    <script src="js/aplayer.js"></script>
 <div class="loader" style="display: none;">
   <div class="loader-inner" style="display: none;">
     <svg width="120" height="220" viewBox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -23,6 +24,8 @@
     </svg>
   </div>
 </div>
+ 
+ 
 <div class="wrapper">
   <section class="hero overlay">
     <header class="header default" style="display: block;">
@@ -200,8 +203,79 @@
       </div>
     </div>
   </section>
+
   <footer class="footer pt-70 pb-70">
     <div class="container">
+		<div class="demo">
+        <div id="player1">
+            <pre class="aplayer-lrc-content">
+[ti:往后余生]
+[ar:王贰浪]
+[al:往后余生]
+[by:colaice2010]colaice2010
+[offset:0]
+[00:03.34]往后余生 - 王贰浪
+[00:08.01]词：马良
+[00:12.00]曲：马良
+[00:17.12]在没风的地方找太阳
+[00:24.55]在你冷的地方做暖阳
+[00:32.28]人事纷纷
+[00:35.06]你总太天真
+[00:39.38]往后的余生
+[00:41.66]我只要你
+[00:44.56]往后余生
+[00:48.16]风雪是你
+[00:52.32]平淡是你
+[00:55.89]清贫也是你
+[00:59.75]荣华是你
+[01:03.41]心底温柔是你
+[01:07.27]目光所致
+[01:10.05]也是你
+[01:14.05]
+[01:31.43]想带你去看晴空万里
+[01:38.81]想大声告诉你我为你着迷
+[01:46.33]往事匆匆
+[01:49.04]你总会被感动
+[01:53.69]往后的余生
+[01:55.65]我只要你
+[01:58.98]往后余生
+[02:02.44]风雪是你
+[02:06.09]春华是你
+[02:09.87]夏雨也是你
+[02:13.59]秋黄是你
+[02:17.24]四季冷暖是你
+[02:21.26]目光所致
+[02:24.11]也是你
+[02:28.11]
+[02:58.01]往后余生
+[03:01.58]风雪是你
+[03:05.21]平淡是你
+[03:08.93]清贫也是你
+[03:12.59]荣华是你
+[03:16.29]心底温柔是你
+[03:20.42]目光所致
+[03:23.16]也是你
+[03:28.02]目光所致
+[03:30.53]也是你
+            </pre>
+        </div>
+    </div>
+    <script>
+        var ap = new APlayer
+                ({
+                    element: document.getElementById('player1'),
+                    narrow: false,
+                    autoplay: true,
+                    showlrc: true,
+                    music: {
+                            title: '往后余生',
+                            author: '王贰浪',
+                            url: 'image/往后余生-王贰浪.mp3',
+                            pic: 'image/1.1.jpeg'
+                            }
+                });
+        ap.init();
+    </script>
       <div class="row">
         <div class="col-sm-12 text-center">
           <p class="uppercase heavy normal">© 2019 love. 陈子豪 &amp; 张裕</p>
@@ -235,6 +309,6 @@
 <textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
 <canvas id="c" width="1000" height="1000"></canvas>
 <script src="./js/float.js"></script> 
-
+   
 </body>
 </html>

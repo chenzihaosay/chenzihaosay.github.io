@@ -23,6 +23,8 @@
 
 
 /*Preloader*/
+.demo{width:360px;margin:60px auto 10px auto}
+        .demo p{padding:10px 0}
 canvas {
 	position: absolute;
 	top: 0;
